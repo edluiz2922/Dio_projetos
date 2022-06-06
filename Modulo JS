@@ -1,0 +1,42 @@
+/** 
+  https://github.com/stebsnusch/basecamp-javascript/tree/main/introducao-ao-javascript/contador
+ * O desafiio proposto foi:
+ * 1)  Tente implementar os eventos usando o método addEventListener.
+ *    Resp. eu o fiz com  o addEventListener;
+ * 2) Crie condicionais que desabilitam o botão de incrementar ou decrementar quando count chegar a um determinado valor (ex.: 0 <= count =< 10).
+ *    Resp. Foi realizado com sucesso ..
+ * 3) Mude a cor do texto em CURRENT_NUMBER para vermelho quando o número for negativo.
+ *    Resp. Foi realizado com sucesso .
+*/
+
+var currentNumberWrapper = document.getElementById("currentNumber");
+var currentNumber = 0;
+
+function increment(){
+    currentNumber = currentNumber+1;
+    currentNumberWrapper.innerHTML = currentNumber;
+    if( currentNumber ==5){
+        alert('vocé atingiiu ao limiter # aperter pra iniciar !!!');
+        document.addEventListener("click", alert);
+        document.getElementById("alert").innerHTML = ( currentNumber = 0);
+        document.getElementById("currentNumber").style.color = "green";   
+
+    }else if(currentNumber>0){
+    document.getElementById("currentNumber").style.color = "green";
+    }
+}
+
+function decrement(){
+    currentNumber = currentNumber-1;
+    currentNumberWrapper.innerHTML = currentNumber;
+
+    if( currentNumber == -5){
+        alert('vocé atingiiu ao limiter # aperter pra iniciar !!!');
+        document.addEventListener("click", alert);
+        document.getElementById("alert").innerHTML = ( currentNumber = 0);
+
+    }else if (currentNumber<0) {
+    document.getElementById("currentNumber").style.color = "red";
+   
+     }
+}
