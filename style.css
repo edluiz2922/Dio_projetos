@@ -1,190 +1,47 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 14px;
-}
 
-body{
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgb(199, 206, 79);
+*{
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;    
-     
-}
-.instagram-wrapper{
-    display: flex;   
-    align-items: center;
-    justify-content: start;
-    width: 60%;
-    height: 100vh;
-}    
-
-/* conteiner do celular ..*/
-
-
-.instagram-phone{
-    display: flex;   
-    align-items: center;
-    justify-content: center;    
-    width: 50%;
- 
-}
-.instagram-phone img{
-    height: 50rem;    
+    background-color: rgb(191, 220, 220);
 }
 
-
-/* conteiner do instagram com foto */
-.instagram-continue{
-    display: flex;  
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    width: 30%;
-    min-height: 50rem;
-    background-color: #ffffff;       
-
-}
-
-.group {
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 4rem 0;
-    border: 1px solid lightgray;   
-}
-.grouṕ:nth-child(1) {
-    min-height: 19rem;
-}
-
-.instagram-logo{
-    margin-top: 2px;
-    height: 6rem;
-}
-.profile-photo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;    
-    overflow: hidden;    
-}
-.profile-photo img{
-    height: 10rem;
-}
-
-.instagram-login{
-    background-color: hsl(204, 100%, 48%);   
-    color: #ffffff;
-    border-radius: 10px;
+.container{
+    margin-top: 10%;
+    margin: 10%;    
     padding: 10px;
-    font-size: 15px;        
-    margin-top: 1rem;
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    border: 5px solid blue;
+    border-radius: 20px;
 }
-.instagram-logout{
-    color:#0095f6;
-    margin-top: 1rem;
-    font-size: 1rem;    
-}
-.not-account{
-    color: rgb(160,160, 160);
-}
-.link-blue{
-    color: #0095f6;
-    font-size: 1.2rem;   
-}
-.get-the-app{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 1.3rem 0;  
-    border: 1px solid lightgray;   
-  
-}
-.download{
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 1rem;     
-}
-.app-download{
-    height: 3rem;
-    width: 10rem;
-    background-size: cover;
+H4{
+    margin-top: 25px;
 }
 
-.app-download:nth-child(1){
-    background-image: url('./img/app-store.png');
-}
-
-.app-download:nth-child(2){
-    background-image:url('./img/google-play-button.png');
+#atualizar-saldo{
+    font-family: sans-serif;
+    font-size: 2rem;
+    background-color: rgb(128, 188, 128);
+    padding-top: 10px;
+    width: 300px;
 }
 
 
-/* media queries ....
-..... vamos para diminuir até o celular */
-
-@media ( max-width: 1024px) {
-    body{
-        width: 100%;
-        background-color: rgb(255, 94, 0);
-    }
-  
-    .instagram-wrapper {
-        width: 80%;
-        height: 100%;
-        display: flex;
-        margin-top: 10%;
-        align-items: center;
-        align-content: space-around;
-        flex-direction: column; 
-              
-             
-     }
-
-     
-
-     .instagram-continue{   
-        background-color: #0095f6; 
-        width: 80%;
-        margin: 10%;
-    
-    }
+#soma{
+    font-family: sans-serif;
+    font-size: 2rem;
+    background-color: rgb(239, 238, 230);
+    padding-left: 5px;
 }
 
-@media ( max-width: 650px ){
-    
-
-    .instagram-wrapper{
-        width: 100%;      
-    }
-
-    .instagram-phone{
-        display: none;
-    }
-
-    .instagram-continue{   
-        background-color: #0095f6; 
-        width: 100%;
-    
-    }
-    .group {
-        border: 1px solid transparent;
-        width: 100%;
-    }
-    .instagram-logo{
-        height: 1rem;
-    }
+#limpar-saldo{
+    font-family: sans-serif;
+    font-size: 2rem;
+    background-color: rgb(227, 225, 112);
+    padding-top: 12px;
+    margin-top: 30px;
+    width: 300px;
 }
+
+
