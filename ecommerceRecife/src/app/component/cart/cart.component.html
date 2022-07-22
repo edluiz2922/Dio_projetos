@@ -1,0 +1,58 @@
+<ng-container *ngIf="products.length !=0">
+    <div class="card-table">
+        <div class="card-product">
+        <table class="table table-responsive">
+            <thead>
+               <tr>
+                <th>Sr.No</th>
+                <th>Product Name</th>
+                <th>Product Image</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Actiion</th>
+               </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of products; let i = index ">
+                    <td>{{i+1 }}</td>
+                    <td>{{item.title}}</td>
+                    <td><img style="width: 120px;" src="{{item.image }}"></td>
+                    <td style="width: 25%;">{{item.description}}</td>
+                    <th style="width: 12%;" >{{item.price}}</th>
+                    <td style="width: 12%;" >{{item.quantity}}</td>
+                    <td style="width: 12%;" >{{item.total}}</td>
+                    <td>
+                        <button (click)="removeItem(item)"   class="btn btn-danger"><i class="fas fa-trash-alt"></i> </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4"></td>
+                    <td><button (click)="emptycart()" class="btn btn-danger"> oh não !!</button></td>
+                    <td><button routerLink="/products" class="btn btn-primary">Compra mais..</button></td>
+                    <td><button  routerLink="/products"class="btn btn-success">verificar..</button></td>
+                    <td><strong> Grand Total : ${{grandTotal}}</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</ng-container>
+
+
+
+<ng-container *ngIf="products.length==0">
+    <div class="container">
+        <div class="card">
+        <h5 class="card-title">Meu Carrinho</h5>
+        </div>
+        <div class="center">
+            <img src="https://img.freepik.com/vetores-gratis/conjunto-de-icones-de-eletrodomesticos_1284-43232.jpg?w=2000" alt="">
+            <h4>Seu carro esta vazio ?</h4>
+            <h6>Adcione itens agora !</h6>
+            <button  routerLink="/products" class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container>

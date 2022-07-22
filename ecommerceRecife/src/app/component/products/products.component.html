@@ -1,0 +1,78 @@
+<div class="card-top container-fluid">
+    <div class="cantainer d-flex">
+        <div class="item">
+            <a >
+                <img style=" background: green;" src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+            </a>
+            <h6>ALL product</h6>
+        </div>
+        <div class="item">
+            <a >
+                <img style="margin-top:35px;" src="https://rukminim1.flixcart.com/image/416/416/l3bx5e80/television/0/w/q/-original-imageh37h34rehqf.jpeg?q=70" alt="">
+            </a>
+            <h6>Electronics</h6>
+        </div>
+        <div class="item">
+            <a >
+                <img style="margin-top:15px;"src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+            </a>  
+            <h6>fashion</h6>          
+            
+        </div>
+        <div class="item">
+            <a >
+                <img  style="width: 65px; margin-top: 5px" src="https://rukminim1.flixcart.com/image/800/960/kxjav0w0/bangle-bracelet-armlet/w/q/r/2-5-2-5-na-3-alogojewl-42-49-43-3combo-alogo-original-imag9yrcgbc4b5rz.jpeg?q=50" alt="">
+            </a>
+            <h6>Jewllery</h6>            
+        </div>
+        <div>
+            <h6 class="titulo" > Vamos as Compras, adicione ao carrinho! <i class="fa-solid fa-bomb"></i></h6>
+        </div>
+    </div>
+</div>
+
+
+<!-- essa parte vem depois de construida a api no service-->
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of productList">
+            <div class="card col-md-3">
+                <img src="{{item.image }}" alt=" produtos fakes para estudo">
+                <h5 style="white-space:nowrap; overflow:hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space:nowrap; overflow:hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Preço: </strong>R$-{{item.price}}</p>
+                <button class="btn btn-primary" (click)= addtocart(item)>Adicionar no Carrinho</button>
+            </div>
+        </ng-container>
+    </div> 
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
